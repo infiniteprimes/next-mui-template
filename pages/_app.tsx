@@ -2,7 +2,6 @@ import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import { NextPage } from 'next'
 import React, { ReactElement, ReactNode } from 'react'
-import { EmotionCache } from '@emotion/react'
 import DefaultLayout from '../component/layout/DefaultLayout'
 import { Hydrate, QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import PropTypes from 'prop-types'
@@ -11,12 +10,11 @@ type NextPageWithLayout = NextPage & {
   getLayout?: (page: ReactElement) => ReactNode
 }
 
-type AppPropsWithLayoutAndEmotionCache = AppProps<any> & {
+type AppPropsWithLayout = AppProps<any> & {
   Component: NextPageWithLayout
-  emotionCache: EmotionCache
 }
 
-function App({ Component, pageProps, emotionCache }: AppPropsWithLayoutAndEmotionCache) {
+function App({ Component, pageProps }: AppPropsWithLayout) {
   const getLayout =
     Component.getLayout ?? ((page: ReactNode) => <DefaultLayout>{page}</DefaultLayout>)
   const [queryClient] = React.useState(() => new QueryClient())
