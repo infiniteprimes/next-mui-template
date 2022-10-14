@@ -4,9 +4,7 @@ import { NextPage } from 'next'
 import React, { ReactElement, ReactNode } from 'react'
 import { EmotionCache } from '@emotion/react'
 import DefaultLayout from '../component/layout/DefaultLayout'
-import { QueryClient } from '@tanstack/query-core'
-import { QueryClientProvider } from '@tanstack/react-query/src/QueryClientProvider'
-import { Hydrate } from '@tanstack/react-query/src/Hydrate'
+import { Hydrate, QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import PropTypes from 'prop-types'
 
 type NextPageWithLayout = NextPage & {
