@@ -11,6 +11,7 @@
   "dependencies": {
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
+    "@infiniteprimes/grpc-web-utils": "^0.0.17",
     "@mui/icons-material": "^5.10.9",
     "@mui/material": "^5.10.9",
     "@tanstack/react-query": "^4.10.3",
