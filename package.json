@@ -1,0 +1,9 @@
+{
+  "name": "next-mui-template",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "repository": "git@github.com:infiniteprimes/next-mui-template.git",
+  "author": "rick <abneryaoo@gmail.com>",
+  "license": "MIT",
+  "private": false
+}
